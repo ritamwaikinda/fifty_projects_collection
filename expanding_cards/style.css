@@ -1,5 +1,6 @@
 /* Google fonts. Select the fonts in the family of your choice eg roboto medium 400 and roboto bold 700, then copy import without style tag to top of this page */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Roboto:wght@400;700&display=swap');
 
 /* Universal selector. Means apply to everything */
 * {
@@ -11,12 +12,19 @@ body {
     font-family: 'Muli', sans-serif;
     margin: 0;
     display: flex;
+    flex-direction: column;
     align-items: center; /* if it's a collumn, it will centeer it horizontally. if it's a row, it will center it vertically */
     justify-content: center; /* Notice this won't do anything yet. this is because you need to set a height to your flexbox :) */
     height: 100vh;
     overflow: hidden;
 }
 
+h1 {
+    font-family: 'Old Standard TT', serif;
+    font-size: 100px;
+    padding-top: 200px;
+    padding-bottom: 35px;
+}
 .container {
     display: flex;
     width: 90vw;
@@ -51,6 +59,7 @@ body {
 
 .panel.active h3 {
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 /* Any styles in here are only going to take effect if the screen is under 480px */
