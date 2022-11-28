@@ -1,0 +1,66 @@
+/* Google fonts. Select the fonts in the family of your choice eg roboto medium 400 and roboto bold 700, then copy import without style tag to top of this page */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* Universal selector. Means apply to everything */
+* {
+    /* if you add padding/margin to element, it won't affect the width of it */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center; /* if it's a collumn, it will centeer it horizontally. if it's a row, it will center it vertically */
+    justify-content: center; /* Notice this won't do anything yet. this is because you need to set a height to your flexbox :) */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5; /* sets the width */
+    margin: 10px;
+    position: relative; /*If you set the inner div to absolute, parent div must be relative. We are going to set to absolute the titles*/
+    transition: flex /*so transition on the flex property*/ 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+}
+
+/* Any styles in here are only going to take effect if the screen is under 480px */
+@media(max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
