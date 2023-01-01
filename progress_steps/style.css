@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    /* this lets you align all divs as a column, on top of each other */
+    flex-direction: column;
+    /* when direction is column, it will align horizontally (So in the middle of the column. If it was row, it would be in the middle of the row with buffer above and below */
+    align-items: center;
+    justify-content: center;
+    /* this allows you to see the justify center */
+    height: 100vh;
+    overflow: hidden;
+}
