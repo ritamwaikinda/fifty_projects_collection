@@ -6,5 +6,5 @@ The projects will get increasingly more difficult as the numbers go up.
 
 _You can find all these projects at these following sites, hosted by surge.sh_
 
-Expanding Cards: https://www.feigned-chicken.surge.sh  
+Expanding Cards: http://www.feigned-chicken.surge.sh  
 Progress Steps: https://www.uppity-railway.surge.sh
